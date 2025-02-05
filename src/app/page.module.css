@@ -2,5 +2,8 @@
   flex: 1;
   height: 90%;
 
+  display: flex;
+  gap: 2rem;
+
   padding: 2rem;
 }

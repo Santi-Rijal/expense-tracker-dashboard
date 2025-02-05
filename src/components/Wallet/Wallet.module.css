@@ -1,0 +1,66 @@
+.walletContainer {
+  background-color: var(--secondary);
+
+  position: relative;
+
+  height: fit-content;
+  width: fit-content;
+  max-width: 25rem;
+
+  padding: 2rem;
+
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  & > .walletArt {
+    object-fit: contain;
+    transform: rotateZ(-30deg);
+    opacity: 0.2;
+    z-index: 0;
+  }
+
+  & > .amount {
+    align-self: center;
+    
+    display: flex;
+    align-items: center;
+
+    z-index: 1;
+
+    & > .dollarSign {
+       color: goldenrod;
+    }
+  }
+
+  & > .lastTransaction {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--primary);
+
+    border-radius: 4px;
+
+    padding: 1rem;
+
+    z-index: 1;
+
+    & > .lastTransactionHeader {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      & > .details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+
+        font-size: smaller;
+        opacity: 0.5;
+      }
+    }
+  }
+}
