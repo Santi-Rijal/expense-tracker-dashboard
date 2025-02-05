@@ -20,7 +20,12 @@ const balanceData = {
 const Wallet = () => {
   return (
     <div className={styles.walletContainer}>
-      <Image src="/walletArt.png" fill className={styles.walletArt} />
+      <Image
+        src="/walletArt.png"
+        fill
+        className={styles.walletArt}
+        alt="walletArt"
+      />
 
       <h3>{balanceData.id}</h3>
       <h1 className={styles.amount}>

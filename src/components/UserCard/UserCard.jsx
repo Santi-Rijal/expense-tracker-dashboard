@@ -12,11 +12,16 @@ const userData = {
 const UserCard = () => {
   return (
     <div className={styles.userCardContainer}>
-      <Image src="/userCardArt.png" fill className={styles.cardArt} />
+      <Image
+        src="/userCardArt.png"
+        fill
+        className={styles.cardArt}
+        alt="userCardArt"
+      />
 
       <section className={styles.userBalanceSection}>
         <div className={styles.userProfile}>
-          <Image src="/user.png" fill className={styles.image} />
+          <Image src="/user.png" fill className={styles.image} alt="user" />
         </div>
 
         <div className={styles.userData}>

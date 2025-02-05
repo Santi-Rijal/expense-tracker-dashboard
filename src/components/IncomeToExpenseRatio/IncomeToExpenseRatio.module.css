@@ -1,0 +1,28 @@
+.chartContainer {
+  background-color: var(--secondary);
+
+  height: fit-content;
+  width: fit-content;
+  max-width: 25rem;
+
+  padding: 2rem;
+
+  border-radius: 6px;
+
+  & > .trendDataContainer {
+    display: flex;
+    flex-direction: column;
+
+    & > .title {
+      font-size: small;
+      opacity: 0.5;
+    }
+
+    & > .data {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: small;
+    }
+  }
+}
