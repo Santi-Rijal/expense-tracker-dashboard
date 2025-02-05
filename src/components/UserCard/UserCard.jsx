@@ -32,7 +32,7 @@ const UserCard = () => {
 
       <hr />
 
-      <p>{userData.bio}</p>
+      <p className={styles.bio}>{userData.bio}</p>
     </div>
   );
 };

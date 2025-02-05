@@ -1,6 +1,5 @@
 .mainContainer {
-  flex: 1;
-  height: 90%;
+  height: fit-content;
 
   display: flex;
   gap: 2rem;
@@ -8,9 +7,45 @@
 
   padding: 2rem;
 
+  & > .rightSection {
+    width: 30%;
+  }
+
+  & > .leftSection {
+    width: 70%;
+    height: fit-content;
+  }
+
   & > .rightSection, & > .leftSection {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  & > .leftSection > .leftSectionCharts {
+    display: flex;
+    gap: 1rem;
+
+    width: 100%;
+    height: 60%;
+  }
+
+  & > .leftSection > .leftSectionDetails {
+    display: flex;
+    gap: 1rem;
+
+    width: 100%;
+    height: 40%;
+  }
+
+  @media only screen and (max-width: 599px) {
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 999px) {
+
+    & > .leftSection > .leftSectionCharts {
+      flex-direction: column;
+    }
   }
 }

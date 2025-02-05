@@ -40,7 +40,7 @@ const TopFiveExpensesChart = () => {
   return (
     <div className={styles.topFiveContainer}>
       <h3>Top 5 Expense Sources</h3>
-      <Bar data={data} options={{ borderColor: "#fff" }} />
+      <Bar data={data} options={{ borderColor: "#fff", responsive: true }} />
     </div>
   );
 };

@@ -3,10 +3,7 @@
 
   position: relative;
 
-  height: fit-content;
-  width: fit-content;
-  max-width: 25rem;
-  min-width: 100%;
+  width: 100%;
 
   padding: 2rem;
 
@@ -55,7 +52,6 @@
 
       & > .details {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         gap: 1rem;
 
