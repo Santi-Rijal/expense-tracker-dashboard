@@ -1,0 +1,16 @@
+.topFiveContainer {
+  background-color: var(--secondary);
+
+  height: fit-content;
+  width: fit-content;
+  max-width: 25rem;
+  min-width: 100%;
+
+  padding: 2rem;
+
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

@@ -8,7 +8,7 @@
 
   padding: 2rem;
 
-  & > .walletChartContainer {
+  & > .rightSection, & > .leftSection {
     display: flex;
     flex-direction: column;
     gap: 1rem;
