@@ -1,25 +1,8 @@
 .walletContainer {
-  background-color: var(--secondary);
-
-  position: relative;
-
-  width: 100%;
-
-  padding: 2rem;
-
-  border-radius: 6px;
-
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-
-  & > .walletArt {
-    object-fit: contain;
-    transform: rotateZ(-30deg);
-    opacity: 0.2;
-    z-index: 0;
-  }
-
+  
   & > .amount {
     align-self: center;
     

@@ -1,24 +1,11 @@
 .userCardContainer {
-  position: relative;
-
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-
-  background-color: var(--secondary);
+  flex: 1;
 
   width: 100%;
-
-  padding: 2rem;
-  border-radius: 6px;
-
-  overflow: hidden;
-
-  & > .cardArt {
-    object-fit: contain;
-    transform: translateX(230px) rotateZ(-30deg)scale(1.5);
-    opacity: 0.2;
-  }
+  height: auto;
 
   & > .userBalanceSection {
     display: flex;

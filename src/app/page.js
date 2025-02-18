@@ -8,8 +8,11 @@ import TopFiveExpensesChart from "@/components/TopFiveExpensesChart/TopFiveExpen
 import MonthlyExpense from "@/components/MonthlyExpense/MonthlyExpense";
 
 import { IoMdSend } from "react-icons/io";
+import { useState } from "react";
 
 export default function Home() {
+  const [currentTab, setCurrentTab] = useState("income");
+
   return (
     <main className={styles.mainContainer}>
       <div className={styles.leftSection}>
@@ -28,8 +31,18 @@ export default function Home() {
         <IncomeToExpenseRatio />
         <div className={styles.userInput}>
           <div className={styles.nav}>
-            <p>Income</p>
-            <p>Expense</p>
+            <p
+              className={currentTab === "income" ? styles.activeTab : ""}
+              onClick={() => setCurrentTab("income")}
+            >
+              Income
+            </p>
+            <p
+              className={currentTab === "expense" ? styles.activeTab : ""}
+              onClick={() => setCurrentTab("expense")}
+            >
+              Expense
+            </p>
           </div>
 
           <div className={styles.inputContainer}>

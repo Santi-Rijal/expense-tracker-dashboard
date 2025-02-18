@@ -1,18 +1,18 @@
 .mainContainer {
   height: fit-content;
+  width: 100%;
 
   display: flex;
   gap: 1rem;
-  justify-content: space-evenly;
 
   padding: 2rem;
 
   & > .rightSection {
-    width: 30%;
+    flex: 0.3;
 
     & > .userInput {
       background-color: var(--secondary);
-      height: 100%;
+      height: auto;
       border-radius: 6px;
 
       display: flex;
@@ -20,6 +20,13 @@
       gap: 1rem;
 
       padding: 2rem;
+
+      & > .nav {
+
+        & > .activeTab {
+          color: goldenrod;
+        }
+      }
 
       & > .inputContainer {
         background-color: #fff;
@@ -62,8 +69,17 @@
   }
 
   & > .leftSection {
-    width: 70%;
-    height: fit-content;
+    flex: 0.7;
+
+    & > .leftSectionCharts {
+      display: flex;
+      gap: 1rem;
+    }
+
+    & > .leftSectionDetails {
+      display: flex;
+      gap: 1rem;  
+    }
   }
 
   & > .rightSection, & > .leftSection {
@@ -72,30 +88,18 @@
     gap: 1rem;
   }
 
-  & > .leftSection > .leftSectionCharts {
-    display: flex;
-    gap: 1rem;
-
-    width: 100%;
-    height: 60%;
-  }
-
-  & > .leftSection > .leftSectionDetails {
-    display: flex;
-    gap: 1rem;
-
-    width: 100%;
-    height: 40%;
-  }
-
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 700px) {
     flex-direction: column;
   }
 
   @media only screen and (max-width: 999px) {
 
-    & > .leftSection > .leftSectionCharts {
+    & > .leftSection > .leftSectionDetails {
       flex-direction: column;
+    }
+
+    & > .rightSection, & > .leftSection {
+      flex: 1;
     }
   }
 }

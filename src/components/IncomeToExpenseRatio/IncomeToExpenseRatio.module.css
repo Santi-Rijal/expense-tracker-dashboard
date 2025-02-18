@@ -1,11 +1,7 @@
 .chartContainer {
-  background-color: var(--secondary);
 
   width: 100%;
-
-  padding: 2rem;
-
-  border-radius: 6px;
+  height: auto;
 
   & > .trendDataContainer {
     display: flex;

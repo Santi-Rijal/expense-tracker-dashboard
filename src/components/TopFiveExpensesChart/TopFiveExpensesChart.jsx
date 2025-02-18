@@ -12,8 +12,8 @@ import {
   Legend,
 } from "chart.js";
 
-import styles from "./TopFiveExpensesChart.module.css";
 import { Bar } from "react-chartjs-2";
+import Card from "../Card/Card";
 
 ChartJS.register(
   CategoryScale,
@@ -38,10 +38,15 @@ export const data = {
 
 const TopFiveExpensesChart = () => {
   return (
-    <div className={styles.topFiveContainer}>
-      <h3>Top 5 Expense Sources</h3>
-      <Bar data={data} options={{ borderColor: "#fff", responsive: true }} />
-    </div>
+    <Card title="Top 5 Expense Sources">
+      <Bar
+        data={data}
+        options={{
+          borderColor: "#fff",
+          responsive: true,
+        }}
+      />
+    </Card>
   );
 };
 

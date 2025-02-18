@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from "./UserCard.module.css";
 import Image from "next/image";
+import Card from "../Card/Card";
 
 const userData = {
   name: "Bob Cake",
@@ -11,29 +12,24 @@ const userData = {
 
 const UserCard = () => {
   return (
-    <div className={styles.userCardContainer}>
-      <Image
-        src="/userCardArt.png"
-        fill
-        className={styles.cardArt}
-        alt="userCardArt"
-      />
+    <Card imageUrl="/userCardArt.png">
+      <div className={styles.userCardContainer}>
+        <section className={styles.userBalanceSection}>
+          <div className={styles.userProfile}>
+            <Image src="/user.png" fill className={styles.image} alt="user" />
+          </div>
 
-      <section className={styles.userBalanceSection}>
-        <div className={styles.userProfile}>
-          <Image src="/user.png" fill className={styles.image} alt="user" />
-        </div>
+          <div className={styles.userData}>
+            <h3 className={styles.name}>{userData.name}</h3>
+            <p className={styles.email}>{userData.email}</p>
+          </div>
+        </section>
 
-        <div className={styles.userData}>
-          <h3 className={styles.name}>{userData.name}</h3>
-          <p className={styles.email}>{userData.email}</p>
-        </div>
-      </section>
+        <hr />
 
-      <hr />
-
-      <p className={styles.bio}>{userData.bio}</p>
-    </div>
+        <p className={styles.bio}>{userData.bio}</p>
+      </div>
+    </Card>
   );
 };
 

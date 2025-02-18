@@ -15,4 +15,8 @@
   &>.logo {
     font-size: large;
   }
+
+  & > .gear {
+    cursor: pointer;
+  }
 }
